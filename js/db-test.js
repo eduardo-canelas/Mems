@@ -1,19 +1,13 @@
-import { getFirestore, doc, setDoc } from "firebase/firestore";
+async function getHabit() {
+  const docRef = doc(db, "habits", "habit1");
+  const docSnap = await getDoc(docRef);
 
-// Initialize Firestore
-const db = getFirestore();
-
-// Add a document to the "habits" collection
-async function addHabit() {
-  try {
-    await setDoc(doc(db, "habits", "habit1"), {
-      name: "Exercise",
-      progress: 0
-    });
-    console.log("Habit added to Firestore!");
-  } catch (error) {
-    console.error("Error adding document: ", error);
+  if (docSnap.exists()) {
+    console.log("Habit data:", docSnap.data());
+  } else {
+    console.log("No such document!");
   }
 }
 
-addHabit();
+// Call the function to read a habit
+getHabit();
