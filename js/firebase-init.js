@@ -21,3 +21,5 @@ const analytics = getAnalytics(app);
 
 // Initialize Firestore
 const db = getFirestore(app); // Initialize Firestore
+
+export { db, doc, setDoc, getDoc }; // Export Firestore functions
