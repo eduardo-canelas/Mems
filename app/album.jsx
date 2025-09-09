@@ -3,7 +3,7 @@ import React from 'react'
 
 const Album = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>Album</Text>
     </View>
   )

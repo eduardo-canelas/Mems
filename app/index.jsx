@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, Image } from 'react-native'
 import { Link, Tabs } from 'expo-router'
 //Image Below
-import Logo from '../assets/favicon.png'
+import Logo from '../assets/1.jpg'
 
 const Home = () => {
   return (
@@ -44,8 +44,8 @@ const styles = StyleSheet.create({
         elevation: 5,
     },
     image: {
-        width: 1,
-        height: 1,
+        width: 400,
+        height: 300,
         borderRadius: 100,
         marginBottom: 50,
     },

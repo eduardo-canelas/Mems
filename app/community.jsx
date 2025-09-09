@@ -3,7 +3,7 @@ import React from 'react'
 
 const Community = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>My Community</Text>
     </View>
   )
