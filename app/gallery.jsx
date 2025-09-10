@@ -7,9 +7,9 @@ const Gallery = () => {
     const theme = Colors[colorScheme] ?? Colors.light
 
     return (
-        <View style={[styles.container, { backgroundColor: theme.notification }, styles.card]}>
-            <Text style={styles.title}>Gallery Page</Text>
-            <Link href="/" style = {[styles.link, styles.title]}>Back Home</Link>
+        <View style={[styles.container, { color: theme.background }]}>
+            <Text style={[styles.title, styles.card,{color: theme.text, backgroundColor: theme.primary }]}>Your Gallery</Text>
+            <Link href="/" style={[styles.link, styles.title, { color: theme.text }]}>Back Home</Link>
         </View>
     )
 }
@@ -28,15 +28,12 @@ const styles = StyleSheet.create({
     },
     link: {
         marginVertical: 100,
-        borderBottomWidth: 3,
     },
     card: {
-        backgroundColor: '#e45fd275',
-        padding: 1,
+        padding: 30,
         borderRadius: 100,
-        boxShadowColor: '#000',
-        marginTop: 80,
-        marginBottom: 100,
+        marginTop: 1,
+        marginBottom: 350,
         marginLeft: 30,
         marginRight: 30,
         shadowOffset: { width: 0, height: 2 },

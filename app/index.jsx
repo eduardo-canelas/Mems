@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, Image } from 'react-native'
 import { Link, Tabs } from 'expo-router'
 //Image Below
-import Logo from '../assets/1.jpg'
+import Logo from '../assets/undraw_online-gallery_dljd.png'
 
 const Home = () => {
   return (
@@ -33,7 +33,6 @@ const styles = StyleSheet.create({
         boxShadowColor: '#000'
     },
     card: {
-        backgroundColor: '#e45fd275',
         padding: 20,
         borderRadius: 30,
         boxShadowColor: '#000',

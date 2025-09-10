@@ -1,12 +1,17 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, useColorScheme } from 'react-native'
 import React from 'react'
 import { Link, Stack } from 'expo-router'
-
+import { Colors } from "../constants/Colors"
 const Upload = () => {
+
+  const colorScheme = useColorScheme();
+  
+  const theme = Colors[colorScheme] ?? Colors.light
+
   return (
-    <View style={styles.container}>
-          <Text style={styles.title}>Upload</Text>
-      <Link style={styles.title} href="/">Back Home</Link>
+    <View style={[styles.container, {color: theme.background}]}>
+          <Text style={[styles.title, {color: theme.text}]}>Upload</Text>
+      <Link style={[styles.title, {color: theme.text}]} href="/">Back Home</Link>
     </View>
   )
 }
@@ -18,12 +23,10 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#e45fd275',
     },
     title: {
         fontWeight: 'bold',
         fontSize: 40,
         marginBottom: 20,
-        borderBottomWidth: 3,
     },
 })

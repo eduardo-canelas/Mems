@@ -1,10 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, useColorScheme } from 'react-native'
 import React from 'react'
-
+import { Colors } from "../constants/Colors"
 const Album = () => {
+  const colorScheme = useColorScheme();
+
+  const theme = Colors[colorScheme] ?? Colors.light
+
   return (
-    <View style={styles.container}>
-      <Text>Album</Text>
+    <View style={[styles.container, { backgroundColor: theme.background }]}>
+      <Text style={[styles.title, { color: theme.text }]}>Album</Text>
     </View>
   )
 }
@@ -16,11 +20,9 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#f7b3e9ff',
   },
   title: {
     fontWeight: 'bold',
     fontSize: 50,
-    color: '#a23eeaff',
   },
 })
