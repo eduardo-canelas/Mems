@@ -1,25 +1,25 @@
 export const Colors = {
   primary: {
-    coral: "#FF6B6B",       // Warm coral - main accent for memories
-    gold: "#FFD93D",        // Golden yellow - for highlights and special moments
-    lavender: "#A8E6CF",    // Soft mint green - calming secondary color
+    blue: "#0A84FF",     // Apple blue
+    green: "#30D158",    // Apple green (brighter in dark, but works in both)
+    red: "#FF453A",      // Apple red
   },
   light: {
-    text: "#2C3E50",        // Deep blue-gray text (warm but readable)
-    primary: "#FF6B6B",     // Warm coral - perfect for a memories app
-    secondary: "#FFD93D",   // Golden yellow - for special highlights
-    background: "#ffffffff",  // Warm cream background (not harsh white)
-    card: "#FFFFFF",        // Pure white cards for photo contrast
-    border: "#E8D5C5",      // Soft beige borders
-    notification: "#FF8A80" // Soft coral for gentle notifications
+    text: "#000000ff",        // dark gray text
+    primary: "#0A84FF",     // Apple blue
+    secondary: "#34C759",   // Apple green (lighter for light mode)
+    background: "#FFFFFF",  // pure white
+    card: "#F2F2F7",        // grouped background
+    border: "#C6C6C8",      // light border gray
+    notification: "#FF3B30" // Apple red for alerts
   },
   dark: {
-    text: "#F5F5DC",        // Warm beige text (softer than pure white)
-    primary: "#FF8A80",     // Slightly lighter coral for dark mode
-    secondary: "#FFE082",   // Softer gold for dark backgrounds
-    background: "#1A1A2E",  // Deep navy blue (warmer than black)
-    card: "#2D2D44",        // Slate purple-gray for cards
-    border: "#404057",      // Muted purple-gray borders
-    notification: "#FFAB91" // Warm peach for notifications
+    text: "#F2F2F7",        // light text
+    primary: "#0A84FF",     // same Apple blue
+    secondary: "#30D158",   // brighter Apple green
+    background: "#000000",  // pure black
+    card: "#1C1C1E",        // dark gray cards
+    border: "#3A3A3C",      // subtle dark border
+    notification: "#FF453A" // Apple red in dark mode
   }
 };
