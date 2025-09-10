@@ -8,7 +8,7 @@ export const Colors = {
     text: "#2C3E50",        // Deep blue-gray text (warm but readable)
     primary: "#FF6B6B",     // Warm coral - perfect for a memories app
     secondary: "#FFD93D",   // Golden yellow - for special highlights
-    background: "#FFF8F0",  // Warm cream background (not harsh white)
+    background: "#ffffffff",  // Warm cream background (not harsh white)
     card: "#FFFFFF",        // Pure white cards for photo contrast
     border: "#E8D5C5",      // Soft beige borders
     notification: "#FF8A80" // Soft coral for gentle notifications
